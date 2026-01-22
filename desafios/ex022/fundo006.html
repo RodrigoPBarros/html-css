@@ -3,19 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Fundo fixo de Tela</title>
     <style>
         body{
-            height: 100vh;
+            /* height: 100vh;
             background-color: black;
             background-image: url(imagens/wallpaper002.jpg);
             background-position: center center;
             background-repeat: no-repeat;
             background-size: cover;
+            background-attachment: fixed; */
+
+            /*Shorthand Background
+                
+            color > Image > Position > Repeat > Size > Attachment
+            
+            */
+
+            background: black url('imagens/wallpaper002.jpg') no-repeat fixed center center / cover;
+
         }
         main{
             background-color: white;
-            width: 400px;
+            max-width: 400px;
             padding: 10px;
             margin: auto;
             border: 1px solid darkblue;
@@ -27,6 +37,8 @@
     <main>
         <h1>Teste de Imagem de Fundo</h1>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati hic qui voluptatibus, autem rerum inventore aspernatur accusamus ea, dolorum asperiores id distinctio, architecto sint maxime praesentium placeat quibusdam facere! Pariatur! Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus doloremque earum cupiditate atque suscipit fugiat sed voluptate vel voluptatem obcaecati, illo praesentium corporis quas, harum adipisci consequuntur impedit autem. Cupiditate. Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque at culpa incidunt temporibus tenetur enim sed vero delectus dolorum! Ad, repellendus inventore quis beatae neque ab distinctio cupiditate numquam fuga.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus quod incidunt, accusamus voluptates maxime minus impedit earum deserunt asperiores alias voluptatibus aspernatur! Soluta natus quisquam et ex non, laborum provident?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius harum odio consectetur obcaecati hic ducimus expedita praesentium! Explicabo aspernatur molestiae nesciunt rerum totam placeat quod iusto consequuntur facere, enim dicta.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur libero suscipit nemo facilis dolore excepturi, minima sint, ratione illum ad odit voluptates quisquam hic odio corrupti illo modi deleniti. Provident. Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque sed ipsa tempore sequi! Error facere dolor inventore fugiat aliquam. Esse, fugit placeat nisi id ab mollitia porro distinctio ipsa. Facilis!</p>
     </main>
 </body>
 </html>
