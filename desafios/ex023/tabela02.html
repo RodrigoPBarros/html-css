@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body{
+            font-family:Arial, Helvetica, sans-serif ;
+        }
+        table{
+            width: 500px;
+            border-collapse: collapse;
+            position: relative;
+        }
+        td, th{
+            border: 1px solid black;
+            padding: 10px;
+        }
+        caption{
+            font: 1.5em bold;
+            padding: 10px;
+            background-color: lightgray;
+        }
+        tbody > tr:nth-child(2n){
+            background-color: lightgray;
+        }
+        thead > tr > th{
+            position: sticky;
+            top: -1px;
+            background-color: #383838;
+        }
+        thead, tfoot{
+            background-color: #383838;
+            color: white;
+        }
+        .numero{
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+    <h1>Uso de Tabelas Grandes</h1>
+    <!-- 
+        Anatomia para tabelas Grandes
+        TABLE
+            THEAD
+                TR, TD, TH
+            TBODY
+                TR, TD, TH
+            TFOOT
+                TR, TD, TH
+    -->
+    <table>
+        <caption>População das Unidades Federativas</caption>
+        <thead>
+            <tr>
+                <th scope="col">Estados</th>
+                <th scope="col" style="width: 50px;">População</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th>São Paulo</th>
+                <td class="numero">46 081 801</td>
+            </tr>
+            <tr>
+                <th>Minhas Gerais</th>
+                <td class="numero">21 393 441</td>
+            </tr>
+            <tr>
+                <th>Rio de Janeiro</th>
+                <td class="numero">17 223 547</td>
+            </tr>
+            <tr>
+                <th>Bahia</th>
+                <td class="numero">14 870 907</td>
+            </tr>
+            <tr>
+                <th>Paraná</th>
+                <td class="numero">11 890 517</td>
+            </tr>
+            <tr>
+                <th>Rio Grande do Sul</th>
+                <td class="numero">11 233 263</td>
+            </tr>
+            <tr>
+                <th>Pernambuco</th>
+                <td class="numero">21 393 441</td>
+            </tr>
+            <tr>
+                <th>Ceará</th>
+                <td class="numero">9 268 836</td>
+            </tr>
+            <tr>
+                <th>Santa Catarina</th>
+                <td class="numero">8 187 029</td>
+            </tr>
+            <tr>
+                <th> Pará</th>
+                <td class="numero">8 711 196</td>
+            </tr>
+            <tr>
+                <th>Goiás</th>
+                <td class="numero">7 423 629</td>
+            </tr>
+            <tr>
+                <th>Maranhão</th>
+                <td class="numero">7 018 211</td>
+            </tr>
+            <tr>
+                <th>Amazonas</th>
+                <td class="numero">4 321 616</td>
+            </tr>
+            <tr>
+                <th>Paraíba</th>
+                <td class="numero">4 164 468</td>
+            </tr>
+            <tr>
+                <th>Espírito Santo</th>
+                <td class="numero">4 126 854</td>
+            </tr>
+            <tr>
+                <th>Mato Grosso</th>
+                <td class="numero">3 893 659</td>
+            </tr>
+            <tr>
+                <th>Rio Grande do Norte</th>
+                <td class="numero">4 164 468</td>
+            </tr>
+            <tr>
+                <th>Paraíba</th>
+                <td class="numero">4 164 468</td>
+            </tr>
+            <tr>
+                <th>Piauí</th>
+                <td class="numero">3 384 547</td>
+            </tr>
+            <tr>
+                <th>Alagoas</th>
+                <td class="numero">3 220 848</td>
+            </tr>
+            <tr>
+                <th>Distrito Federal</th>
+                <td class="numero">2 996 899</td>
+            </tr>
+            <tr>
+                <th>Mato Grosso do Sul</th>
+                <td class="numero">2 924 631</td>
+            </tr>
+            <tr>
+                <th>Rondônia</th>
+                <td class="numero">1 751 950</td>
+            </tr>
+            <tr>
+                <th>Tocantins</th>
+                <td class="numero">1 586 859</td>
+            </tr>
+            <tr>
+                <th>Acre</th>
+                <td class="numero">884 372</td>
+            </tr>
+            <tr>
+                <th>Amapá</th>
+                <td class="numero">806 517</td>
+            </tr>
+            <tr>
+                <th>Roraima</th>
+                <td class="numero">738 772</td>
+            </tr>
+
+        </tbody>
+        <tfoot>
+            <tr>
+                <th scope="row">Total</th>
+                <td class="numero"><strong>213 421 037</strong></td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
